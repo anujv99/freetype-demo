@@ -1,0 +1,15 @@
+[submodule "engine/vendor/freetype"]
+	path = engine/vendor/freetype
+	url = https://www.github.com/preversewharf45/freetype2
+[submodule "engine/vendor/imgui"]
+	path = engine/vendor/imgui
+	url = https://www.github.com/preversewharf45/imgui
+[submodule "engine/vendor/glfw"]
+	path = engine/vendor/glfw
+	url = https://www.github.com/preversewharf45/glfw
+[submodule "engine/vendor/prevmath"]
+	path = engine/vendor/prevmath
+	url = https://www.github.com/preversewharf45/prevmath
+[submodule "ftinspect/msdfgen"]
+	path = ftinspect/msdfgen
+	url = https://www.github.com/preversewharf45/msdfgen
