@@ -55,7 +55,7 @@ namespace engine { namespace graphics {
 		TextureWrapping Wrapping				= TextureWrapping::CLAMP;
 		InternalTextureFormat InternalFormat	= InternalTextureFormat::RGBA;	//format to be used in the shader
 		ExternalTextureFormat ExternalFormat	= ExternalTextureFormat::RGBA;	//format of the data used to initialize the texture (number of component per pixel)
-		ExternalDataType ExternalDataType		= ExternalDataType::UNSIGNED_BYTE;	//data type of the data used to initialize the texture
+		ExternalDataType DataType				= ExternalDataType::UNSIGNED_BYTE;	//data type of the data used to initialize the texture
 	};
 
     class Texture : public utils::HandledObject<Texture> {

@@ -1,11 +1,12 @@
 #include "sdfgen.h"
 
+#include <cmath>
 #include <iostream>
 
 // Bitmap Conversion
 
 struct Point {
-	int dx, dy;
+	int dx = 0, dy = 0;
 
 	int DistSq() const { return dx * dx + dy * dy; }
 };

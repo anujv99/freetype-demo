@@ -173,9 +173,9 @@ void FTGrid::UpdateBitmap(unsigned int fontIndex, unsigned int glyphIndex, unsig
 				if (bmp.buffer[i] > 0) bmp.buffer[i] = 255;
 			}
 
+			UpdateDistanceFieldTexture(&bmp, &face->glyph->outline);
 			m_TextureCache = Texture::Create(size, bmp.buffer, params);
 
-			UpdateDistanceFieldTexture(&bmp, &face->glyph->outline);
 
 			FT_Bitmap_Done(m_Lib, &bmp);
 		} else {
@@ -195,7 +195,7 @@ void FTGrid::UpdateDistanceFieldTexture(FT_Bitmap * bmp, FT_Outline * outline) {
 	params.InternalFormat = InternalTextureFormat::R32F;
 	params.ExternalFormat = ExternalTextureFormat::R;
 	params.Wrapping = TextureWrapping::CLAMP;
-	params.ExternalDataType = ExternalDataType::FLOAT;
+	params.DataType = ExternalDataType::FLOAT;
 
 	if (m_OutlineDistanceField) {
 		auto df = SDFGen::GenerateSDFFromOutline(outline, bmp->width, bmp->rows);

@@ -35,7 +35,7 @@ namespace engine {
 			m_InternalFormat = OpenGLHelper::GetOpenGLType(params.InternalFormat);
 			m_Format = OpenGLHelper::GetOpenGLType(params.ExternalFormat);
 			m_BytesPerPixel = OpenGLHelper::GetNumBytes(params.ExternalFormat);
-			m_ExternalDataType = OpenGLHelper::GetOpenGLType(params.ExternalDataType);
+			m_ExternalDataType = OpenGLHelper::GetOpenGLType(params.DataType);
 
 			m_Width = (GLuint)size.x;
 			m_Height = (GLuint)size.y;
@@ -63,7 +63,7 @@ namespace engine {
 			m_InternalFormat = OpenGLHelper::GetOpenGLType(params.InternalFormat);
 			m_Format = OpenGLHelper::GetOpenGLType(params.ExternalFormat);
 			m_BytesPerPixel = OpenGLHelper::GetNumBytes(params.ExternalFormat);
-			m_ExternalDataType = OpenGLHelper::GetOpenGLType(params.ExternalDataType);
+			m_ExternalDataType = OpenGLHelper::GetOpenGLType(params.DataType);
 
 			m_Width = (GLuint)size.x;
 			m_Height = (GLuint)size.y;

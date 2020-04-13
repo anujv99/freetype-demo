@@ -37,11 +37,7 @@ target_include_directories(ftinspect PRIVATE "msdfgen")
 target_link_libraries(ftinspect PRIVATE Engine)
 target_link_libraries(ftinspect PRIVATE lib_msdfgen)
 
-if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-	if(CMAKE_CXX_COMPILER_VERSION VERSION_LESS 8.0)
-		target_link_libraries(ftinspect PRIVATE stdc++fs)
-	endif()
-endif()
+target_link_libraries(ftinspect PRIVATE stdc++fs)
 
 option(LOGGING "Enable/Disable Logging" TRUE)
 option(ASSERT "Enable/Disable Assertions" TRUE)
