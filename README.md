@@ -13,3 +13,5 @@ Build Steps:
 5. ```cmake .. -G <build tools>```
 
 6. This will generate build files according to your plaform and tools
+
+The demo require OpenGL version 4.5 so please make sure to update your graphics drivers
